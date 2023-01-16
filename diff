@@ -4,8 +4,8 @@
  ############################################################
  
  # Start in daemon (background) mode and release terminal (default: off)
--daemon on
-+daemon off
++daemon on
+-daemon off
  
  # File to store the process ID, also called pid file. (default: not defined)
  process_id_file /var/run/motion/motion.pid
@@ -13,8 +13,8 @@
  
  # Rotate image this number of degrees. The rotation affects all saved images as
  # well as movies. Valid values: 0 (default = no rotation), 90, 180 and 270.
--rotate 180
-+rotate 0
++rotate 180
+-rotate 0
  
  # Image width (pixels). Valid range: Camera dependent, default: 352
  width 320
@@ -22,8 +22,8 @@
  
  # Maximum number of frames to be captured per second.
  # Valid range: 2-100. Default: 100 (almost no limit).
--framerate 33
-+framerate 2
++framerate 33
+-framerate 2
  
  # Minimum time in seconds between capturing picture frames from the camera.
  # Default: 0 = disabled - the capture rate is given by the camera framerate.
@@ -31,15 +31,15 @@
  # The auto_brightness feature uses the brightness option as its target value.
  # If brightness is zero auto_brightness will adjust to average brightness value 128.
  # Only recommended for cameras without auto brightness
--auto_brightness on
-+auto_brightness off
++auto_brightness on
+-auto_brightness off
  
  # Set the initial brightness of a video device.
  # If auto_brightness is enabled, this value defines the average brightness level
  # which Motion will try and adjust to.
  # Valid range 0-255, default 0 = disabled
--brightness 170 
-+brightness 0
++brightness 170 
+-brightness 0
  
  # Set the contrast of a video device.
  # Valid range 0-255, default 0 = disabled
@@ -47,8 +47,8 @@
  
  # Threshold for number of changed pixels in an image that
  # triggers motion detection (default: 1500)
--threshold 1000
-+threshold 1500
++threshold 1000
+-threshold 1500
  
  # Automatically tune the threshold down if possible (default: off)
  threshold_tune off
@@ -56,8 +56,8 @@
  # Picture with most motion of an event is saved when set to 'best'.
  # Picture with motion nearest center of picture is saved when set to 'center'.
  # Can be used as preview shot for the corresponding movie.
--output_pictures off
-+output_pictures on
++output_pictures off
+-output_pictures on
  
  # Output pictures with only the pixels moving object (ghost images) (default: off)
  output_debug_pictures off
@@ -65,12 +65,12 @@
  stream_motion off
  
  # Maximum framerate for stream streams (default: 1)
--stream_maxrate 33
-+stream_maxrate 1
++stream_maxrate 33
+-stream_maxrate 1
  
  # Restrict stream connections to localhost only (default: on)
--stream_localhost off
-+stream_localhost on
++stream_localhost off
+-stream_localhost on
  
  # Limits the number of images per connection (default: 0 = unlimited)
  # Number can be defined by multiplying actual stream rate by desired number of seconds

@@ -19,7 +19,7 @@ $PGM  "$T" -v $VOICE -a $AMPLITUDE -p $PITCH_LOW   -s $SPEED  -g $WORD_BREAKS  -
 $PGM  "$T" -v $VOICE -a $AMPLITUDE -p $PITCH_HIGH  -s $SPEED  -g $WORD_BREAKS  -w f2 
 # some espekas on some platforms have issue to dected output device
 # thuis saving them to file and playing separately
-aplay f2 &
-aplay f1
+aplay  --device plughw:UACDemoV10 f2 &
+aplay  --device plughw:UACDemoV10 f1
 # mixing the two pitches have disputable effect
 
